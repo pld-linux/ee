@@ -9,8 +9,8 @@ Group(pl):	X11/Narzêdzia
 Source:		ftp://ftp.gnome.org/pub/%{name}-%{version}.tar.gz
 Patch:		ee-desktop.patch
 URL:		http://www.gnome.org/
-BuildPrereq:	gtk+-devel >= 1.2.0
-BuildPrereq:	xpm-devel
+BuildRequires:	gtk+-devel >= 1.2.0
+BuildRequires:	xpm-devel
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %define _prefix /usr/X11R6
