@@ -2,10 +2,10 @@ Summary:	The Electric Eyes image viewer application
 Summary(es):	Electric Eyes - Visualizador de Imágenes
 Summary(fr):	Le visualiseur d'images Electric Eyes
 Summary(pl):	Elektryczne Oczy - przegl±darka plików graficznych
-Summary(pt_BR):Electric Eyes - Visualizador de Imagens
+Summary(pt_BR): Electric Eyes - Visualizador de Imagens
 Name:		ee
 Version:	0.3.12
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications
 Group(de):	X11/Applikationen
@@ -13,6 +13,8 @@ Group(pl):	X11/Aplikacje
 Source0:	ftp://ftp.gnome.org/pub/GNOME/stable/sources/ee/%{name}-%{version}.tar.gz
 Icon:		ee.xpm
 URL:		http://www.gnome.org/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	imlib-devel
 BuildRequires:	gettext-devel
 BuildRequires:	gtk+-devel >= 1.2.0
@@ -52,7 +54,9 @@ manipulação de uma variedade de formatos de imagens.
 
 %build
 gettextize --copy --force
-automake
+aclocal -I macros
+autoconf
+automake -a -c
 %configure \
 	--without-included-gettext
 %{__make}
@@ -72,6 +76,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc {AUTHORS,ChangeLog,NEWS,README}.gz
+%doc *.gz
 %attr(755,root,root) %{_bindir}/*
 %{_applnkdir}/Graphics/Viewers/ee.desktop
