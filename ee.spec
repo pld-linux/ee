@@ -2,11 +2,11 @@ Summary:	The Electric Eyes image viewer application
 Summary(es):	Electric Eyes - Visualizador de Imágenes
 Summary(fr):	Le visualiseur d'images Electric Eyes
 Summary(pl):	Elektryczne Oczy - przegl±darka plików graficznych
-Summary(pt_BR):	Electric Eyes - Visualizador de Imagens
+Summary(pt_BR):Electric Eyes - Visualizador de Imagens
 Name:		ee
 Version:	0.3.11
-Release:	1
-Copyright:	GPL
+Release:	2
+License:	GPL
 Group:		X11/Utilities
 Group(pl):	X11/Narzêdzia
 Source:		ftp://ftp.gnome.org/pub/GNOME/stable/sources/ee/%{name}-%{version}.tar.gz
@@ -22,14 +22,14 @@ BuildRoot:	/tmp/%{name}-%{version}-root
 %define _prefix /usr/X11R6
 
 %description
-The ee package contains the Electric Eyes image viewer for the GNOME desktop
-environment.  Electric Eyes is primary an image viewer, but it also allows
-many types of image manipulations. Electric Eyes can handle almost any type
-of image.
+The ee package contains the Electric Eyes image viewer for the GNOME
+desktop environment.  Electric Eyes is primary an image viewer, but it also
+allows many types of image manipulations. Electric Eyes can handle almost
+any type of image.
 
 %description -l es
-El visor de imágenes Electric Eyes permite visualizar y manejar una variedad
-de formatos de imágenes.
+El visor de imágenes Electric Eyes permite visualizar y manejar una
+variedad de formatos de imágenes.
 
 %description -l fr
 Le package ee contient le visualiseur d'images Electric Eyes pour le bureau
@@ -44,8 +44,8 @@ s³u¿yæ do wykonywania niektórych operacji spotykanych w programach do
 obróbki grafiki.
 
 %description -l pt_BR
-O visualizador de imagens Electric Eyes permite a visualização e manipulação
-de uma variedade de formatos de imagens.
+O visualizador de imagens Electric Eyes permite a visualização e
+manipulação de uma variedade de formatos de imagens.
 
 %prep
 %setup -q
