@@ -63,6 +63,6 @@ diff -Nur ee-0.3.12/ee.desktop ee-0.3.12-desktop/ee.desktop
 +Terminal=false
  Type=Application
  MimeType=image/gif;image/jpeg;image/png;image/tiff;image/x-xpm
-+Categories=Graphics;Viewer;
++Categories=GTK;GNOME;Graphics;Viewer;
 +Encoding=UTF-8
 +# vi: encoding=utf-8
