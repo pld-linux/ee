@@ -7,7 +7,7 @@ Summary(ru):	Программа просмотра изображений Electric Eyes
 Summary(uk):	Програма перегляду зображень Electric Eyes
 Name:		ee
 Version:	0.3.12
-Release:	10
+Release:	11
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/ee/0.3/%{name}-%{version}.tar.gz
