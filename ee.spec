@@ -2,7 +2,7 @@ Summary:	Electric Eyes
 Summary(pl):	Elektryczne Oczy
 Name:		ee
 Version:	0.3.8
-Release:	2
+Release:	3
 Copyright:	GPL
 Group:		X11/Utilities
 Group(pl):	X11/Narzêdzia
@@ -25,7 +25,7 @@ autoconf
 CFLAGS="$RPM_OPT_FLAGS" LDFLAGS="-s" \
 ./configure \
 	--prefix=/usr/X11R6 \
-	--with-included-gettext
+	--without-included-gettext
 make
 
 %install
@@ -62,6 +62,10 @@ rm -rf $RPM_BUILD_ROOT
 %lang(sv) /usr/X11R6/share/locale/sv/LC_MESSAGES/ee.mo
 
 %changelog
+* Tue Mar 16 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
+  [0.3.8-3]
+- fixed configure option (--without-included-gettext).
+
 * Sun Mar 14 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
   [0.3.8-2]
 - removed Requires (autogenerate).
@@ -75,7 +79,7 @@ rm -rf $RPM_BUILD_ROOT
 * Tue Jan 05 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
   [0.3.5-1]
 - added LDFLAGS="-s" to ./configure enviroment,
-- added --with-included-gettext to configure parameters,
+- added --without-included-gettext to configure parameters,
 - added full %attr description in %files,
 - more locales (ja),
 - build against GNU libc-2.1.
