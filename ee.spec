@@ -4,13 +4,12 @@ Summary(fr):	Le visualiseur d'images Electric Eyes
 Summary(pl):	Elektryczne Oczy - przegl±darka plików graficznych
 Summary(pt_BR):Electric Eyes - Visualizador de Imagens
 Name:		ee
-Version:	0.3.11
-Release:	2
+Version:	0.3.12
+Release:	1
 License:	GPL
 Group:		X11/Utilities
 Group(pl):	X11/Narzêdzia
 Source:		ftp://ftp.gnome.org/pub/GNOME/stable/sources/ee/%{name}-%{version}.tar.gz
-Patch:		ee-applnk.patch
 Icon:		ee.xpm
 URL:		http://www.gnome.org/
 BuildRequires:	gtk+-devel >= 1.2.0
@@ -48,7 +47,6 @@ manipulação de uma variedade de formatos de imagens.
 
 %prep
 %setup -q
-%patch -p1
 
 %build
 gettextize --copy --force
@@ -60,11 +58,13 @@ LDFLAGS="-s"; export LDFLAGS
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} DESTDIR=$RPM_BUILD_ROOT install
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT \
+	Graphicsdir=%{_applnkdir}/Graphics/Viewers
 
 gzip -9nf AUTHORS ChangeLog NEWS README
 
-%find_lang %{name}
+%find_lang %{name} --with-gnome
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -73,5 +73,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc {AUTHORS,ChangeLog,NEWS,README}.gz
 %attr(755,root,root) %{_bindir}/*
-%{_datadir}/gnome/help/ee
-%{_datadir}/applnk/Graphics/ee.desktop
+%{_applnkdir}/Graphics/Viewers/ee.desktop
