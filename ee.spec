@@ -5,41 +5,43 @@ Summary(pl):	Elektryczne Oczy - przegl±darka plików graficznych
 Summary(pt_BR):Electric Eyes - Visualizador de Imagens
 Name:		ee
 Version:	0.3.12
-Release:	1
+Release:	2
 License:	GPL
-Group:		X11/Utilities
-Group(pl):	X11/Narzêdzia
-Source:		ftp://ftp.gnome.org/pub/GNOME/stable/sources/ee/%{name}-%{version}.tar.gz
+Group:		X11/Applications
+Group(de):	X11/Applikationen
+Group(pl):	X11/Aplikacje
+Source0:	ftp://ftp.gnome.org/pub/GNOME/stable/sources/ee/%{name}-%{version}.tar.gz
 Icon:		ee.xpm
 URL:		http://www.gnome.org/
-BuildRequires:	gtk+-devel >= 1.2.0
 BuildRequires:	imlib-devel
 BuildRequires:	gettext-devel
+BuildRequires:	gtk+-devel >= 1.2.0
+BuildRequires:	gnome-libs-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define _prefix /usr/X11R6
 
 %description
 The ee package contains the Electric Eyes image viewer for the GNOME
-desktop environment.  Electric Eyes is primary an image viewer, but it also
-allows many types of image manipulations. Electric Eyes can handle almost
-any type of image.
+desktop environment. Electric Eyes is primary an image viewer, but it
+also allows many types of image manipulations. Electric Eyes can
+handle almost any type of image.
 
 %description -l es
 El visor de imágenes Electric Eyes permite visualizar y manejar una
 variedad de formatos de imágenes.
 
 %description -l fr
-Le package ee contient le visualiseur d'images Electric Eyes pour le bureau
-graphique GNOME. Electric Eyes est d'abord un visualiseur d'images, mais il
-peut aussi les modifier. Electric Eyes peut gérer quasiment tous les types
-d'images.
+Le package ee contient le visualiseur d'images Electric Eyes pour le
+bureau graphique GNOME. Electric Eyes est d'abord un visualiseur
+d'images, mais il peut aussi les modifier. Electric Eyes peut gérer
+quasiment tous les types d'images.
 
 %description -l pl
-"Elektryczne Oczy" s± przegl±dark± plików graficznych w ró¿nych formatach
-dla GNOME. Electric Eyes jest przede wszystkim przegl±dark±, ale mo¿e te¿
-s³u¿yæ do wykonywania niektórych operacji spotykanych w programach do
-obróbki grafiki.
+"Elektryczne Oczy" s± przegl±dark± plików graficznych w ró¿nych
+formatach dla GNOME. Electric Eyes jest przede wszystkim przegl±dark±,
+ale mo¿e te¿ s³u¿yæ do wykonywania niektórych operacji spotykanych w
+programach do obróbki grafiki.
 
 %description -l pt_BR
 O visualizador de imagens Electric Eyes permite a visualização e
@@ -51,7 +53,6 @@ manipulação de uma variedade de formatos de imagens.
 %build
 gettextize --copy --force
 automake
-LDFLAGS="-s"; export LDFLAGS
 %configure \
 	--without-included-gettext
 %{__make}
