@@ -97,9 +97,6 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	Graphicsdir=%{_desktopdir}
 
-mv -f $RPM_BUILD_ROOT%{_datadir}/locale/zh_CN{.GB2312,}
-mv -f $RPM_BUILD_ROOT%{_datadir}/locale/zh_TW{.Big5,}
-
 %find_lang %{name} --with-gnome
 
 %clean
