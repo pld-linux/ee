@@ -16,7 +16,6 @@ URL:		http://www.gnome.org/
 BuildRequires:	gtk+-devel >= 1.2.0
 BuildRequires:	imlib-devel
 BuildRequires:	gettext-devel
-BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define _prefix /usr/X11R6
