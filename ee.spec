@@ -2,14 +2,12 @@ Summary:	Electric Eyes
 Summary(pl):	Elektryczne Oczy
 Name:		ee
 Version:	0.3.8
-Release:	1
+Release:	2
 Copyright:	GPL
 Group:		X11/Utilities
 Group(pl):	X11/Narzêdzia
 Source:		ftp://ftp.gnome.org/pub/%{name}-%{version}.tar.gz
 URL:		http://www.gnome.org/
-Requires:	imlib = 1.9.3
-Requires:	gtk+ = 1.2.0
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
@@ -64,6 +62,10 @@ rm -rf $RPM_BUILD_ROOT
 %lang(sv) /usr/X11R6/share/locale/sv/LC_MESSAGES/ee.mo
 
 %changelog
+* Sun Mar 14 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
+  [0.3.8-2]
+- removed Requires (autogenerate).
+
 * Sat Feb 27 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
   [0.3.8-1]
 - Requires changed to imlib = 1.9.3, gtk+ = 1.2.0,
