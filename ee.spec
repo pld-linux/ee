@@ -39,7 +39,7 @@ d'images.
 
 %description -l pl
 "Elektryczne Oczy" s± przegl±dark± plików graficznych w ró¿nych formatach
-dla GNOME. Electric Eyes jest przedewszystkim przegl±dark± ale moze te¿
+dla GNOME. Electric Eyes jest przede wszystkim przegl±dark±, ale mo¿e te¿
 s³u¿yæ do wykonywania niektórych operacji spotykanych w programach do
 obróbki grafiki.
 
