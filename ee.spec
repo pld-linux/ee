@@ -55,7 +55,7 @@ rm -rf $RPM_BUILD_ROOT
 - changed Buildroot to /tmp/%%{name}-%%{version}-root,
 - added using %%{name} and %%{version} in Source,
 - added full %attr description in %files,
-- added striping binaries,
+- added stripping binaries,
 - chnged install pprefix to /usr/X11R6
 - removed COPYING from %doc (copyright statment is in Copyright field).
 
