@@ -1,0 +1,24 @@
+--- ee-0.3.12/po/ja.po~	Fri Jul 23 01:11:04 2004
++++ ee-0.3.12/po/ja.po	Fri Jul 23 01:11:04 2004
+@@ -11,7 +11,7 @@
+ "Last-Translator: Eiichiro ITANI <emu@ceres.dti.ne.jp>\n"
+ "Language-Team: <gnome@lists.hypercore.co.jp>\n"
+ "MIME-Version: 1.0\n"
+-"Content-Type: text/plain; charset=euc-japan\n"
++"Content-Type: text/plain; charset=EUC-JP\n"
+ "Content-Transfer-Encoding: 8bit\n"
+ 
+ #: ee_edit.c:1100
+--- ee-0.3.12/po/zh_TW.Big5.po~	Fri Jul 23 01:11:34 2004
++++ ee-0.3.12/po/zh_TW.Big5.po	Fri Jul 23 01:11:34 2004
+@@ -11,8 +11,8 @@
+ "Last-Translator: Jing-Jong Shyue <shyue@sonoma.com.tw>\n"
+ "Language-Team: Chinese <zh@li.org>\n"
+ "MIME-Version: 1.0\n"
+-"Content-Type: text/plain; charset=8bit\n"
+-"Content-Transfer-Encoding: big5\n"
++"Content-Type: text/plain; charset=big5\n"
++"Content-Transfer-Encoding: 8bit\n"
+ 
+ #: ee_edit.c:1100
+ msgid "Electric Eyes - Edit Controls"

@@ -1,0 +1,11 @@
+--- ee-0.3.12/configure.in~	Fri Jul 23 01:07:08 2004
++++ ee-0.3.12/configure.in	Fri Jul 23 01:07:08 2004
+@@ -16,7 +16,7 @@
+ 
+ GNOME_X_CHECKS
+ 
+-ALL_LINGUAS="ca da de el en_GB es fi fr ga gl hu it ja ko lt nl no pl pt pt_BR ro ru sv tr uk zh_TW.Big5 zh_CN.GB2312"
++ALL_LINGUAS="ca da de el en_GB es fi fr ga gl hu it ja ko lt nb nl pl pt pt_BR ro ru sv tr uk zh_TW zh_CN"
+ AM_GNU_GETTEXT
+ 
+ AC_SUBST(CFLAGS)
