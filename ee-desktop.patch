@@ -53,7 +53,7 @@ diff -Nur ee-0.3.12/ee.desktop ee-0.3.12-desktop/ee.desktop
 +Comment[gl]=Programa de visualización de imaxes
 +Comment[ja]=画像表示プログラム
 +Comment[ko]=그림 표시 프로그램
-+Comment[no]=Program for bildeframvisning
++Comment[nb]=Program for bildeframvisning
 +Comment[pl]=Przeglądarka graficzna
 +Comment[pt]=Programa para visualização de imagens
 +Comment[pt_BR]=Programa para visualização de imagens
