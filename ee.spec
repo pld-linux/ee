@@ -7,7 +7,7 @@ Summary(ru):	Программа просмотра изображений Electric Eyes
 Summary(uk):	Програма перегляду зображень Electric Eyes
 Name:		ee
 Version:	0.3.12
-Release:	11
+Release:	12
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/ee/0.3/%{name}-%{version}.tar.gz
@@ -91,7 +91,7 @@ rm -rf missing
 rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
-	Graphicsdir=%{_applnkdir}/Graphics/Viewers
+	Graphicsdir=%{_desktopdir}
 
 mv -f $RPM_BUILD_ROOT%{_datadir}/locale/zh_CN{.GB2312,}
 mv -f $RPM_BUILD_ROOT%{_datadir}/locale/zh_TW{.Big5,}
@@ -106,5 +106,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/mime-info/*
-%{_applnkdir}/Graphics/Viewers/ee.desktop
+%{_desktopdir}/%{name}.desktop
 %{_pixmapsdir}/*
