@@ -1,6 +1,7 @@
---- ee-0.3.12/ee.desktop.orig	Mon Dec  1 23:09:50 2003
-+++ ee-0.3.12/ee.desktop	Mon Dec  1 23:25:11 2003
-@@ -1,41 +1,43 @@
+diff -Nur ee-0.3.12/ee.desktop ee-0.3.12-desktop/ee.desktop
+--- ee-0.3.12/ee.desktop	2000-07-17 23:38:16.000000000 +0200
++++ ee-0.3.12-desktop/ee.desktop	2004-02-06 19:59:47.537543664 +0100
+@@ -1,41 +1,44 @@
  [Desktop Entry]
  Name=Electric Eyes
 -Name[da]=Elektriske Øjne
@@ -62,5 +63,6 @@
 +Terminal=false
  Type=Application
  MimeType=image/gif;image/jpeg;image/png;image/tiff;image/x-xpm
++Categories=Graphics;Viewer;
 +Encoding=UTF-8
 +# vi: encoding=utf-8
