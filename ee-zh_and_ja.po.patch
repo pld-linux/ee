@@ -22,3 +22,14 @@
  
  #: ee_edit.c:1100
  msgid "Electric Eyes - Edit Controls"
+--- ee-0.3.12/configure~	2004-07-23 04:30:07.000000000 +0000
++++ ee-0.3.12/configure	2004-07-23 04:30:07.000000000 +0000
+@@ -2939,7 +2939,7 @@
+ 	
+ 
+ 
+-ALL_LINGUAS="ca da de el en_GB es fi fr ga gl hu it ja ko lt nl no pl pt pt_BR ro ru sv tr uk zh_TW.Big5 zh_CN.GB2312"
++ALL_LINGUAS="ca da de el en_GB es fi fr ga gl hu it ja ko lt nb nl pl pt pt_BR ro ru sv tr uk zh_TW zh_CN"
+ echo $ac_n "checking for working const""... $ac_c" 1>&6
+ echo "configure:2945: checking for working const" >&5
+ if eval "test \"`echo '$''{'ac_cv_c_const'+set}'`\" = set"; then
