@@ -1,0 +1,21 @@
+diff -uNr ee-0.3.12.orig/po/pt_BR.po ee-0.3.12/po/pt_BR.po
+--- ee-0.3.12.orig/po/pt_BR.po	Mon Jul 17 18:45:56 2000
++++ ee-0.3.12/po/pt_BR.po	Mon Feb 19 21:15:58 2001
+@@ -371,7 +371,7 @@
+ # ee_image.c:914
+ #: ee_image.c:916
+ msgid "Electric Eyes"
+-msgstr "Olhos Elétricos"
++msgstr "Electric Eyes"
+ 
+ # ee_list.c:346
+ #: ee_list.c:347
+@@ -386,7 +386,7 @@
+ # ee_list.c:486
+ #: ee_list.c:487
+ msgid "Electric Eyes - Images"
+-msgstr "Olhos Elétricos - Imagens"
++msgstr "Electric Eyes - Imagens"
+ 
+ # ee_list.c:502 ee_menu.c:55 ee_menu.c:132
+ #: ee_list.c:503 ee_menu.c:55 ee_menu.c:126
