@@ -1,22 +1,28 @@
-Summary:     Electric Eyes
-Name:        ee
-Version:     0.3.5
-Release:     1
-Copyright:   GPL
-Group:       X11/Utilities
-Source:      ftp://ftp.gnome.org/pub/%{name}-%{version}.tar.gz
-URL:         http://www.gnome.org
-Requires:    imlib = 1.8.2
-BuildRoot:   /tmp/%{name}-%{version}-root
+Summary:	Electric Eyes
+Summary(pl):	Elektryczne Oczy
+Name:		ee
+Version:	0.3.5
+Release:	1d
+Copyright:	GPL
+Group:		X11/Utilities
+Group(pl):	X11/U¿ytki
+Source:		ftp://ftp.gnome.org/pub/%{name}-%{version}.tar.gz
+URL:		http://www.gnome.org
+Requires:	imlib >= 1.8.2
+BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
 The Electric Eyes image viewer lets you view and manipulate
 images in a variety of formats.
 
+%description -l pl
+"Elektryczne Oczy" s± przegl±dark± dla ró¿norodnych formatów graficznych,
+
 %prep
 %setup -q
 
 %build
+autoconf
 CFLAGS="$RPM_OPT_FLAGS" LDFLAGS="-s" \
 ./configure \
 	--prefix=/usr/X11R6 \
@@ -29,13 +35,17 @@ make prefix=$RPM_BUILD_ROOT/usr/X11R6 install
 
 strip $RPM_BUILD_ROOT/usr/X11R6/bin/*
 
+bzip2 -9 AUTHORS ChangeLog NEWS README
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(644, root, root, 755)
-%doc AUTHORS ChangeLog NEWS README
-%attr(755, root, root) /usr/X11R6/bin/*
+%defattr(644,root,root,755)
+%doc {AUTHORS,ChangeLog,NEWS,README}.bz2
+
+%attr(755,root,root) /usr/X11R6/bin/*
+
 /usr/X11R6/share/gnome/help/ee
 /usr/X11R6/share/apps/Graphics/*
 
@@ -56,7 +66,8 @@ rm -rf $RPM_BUILD_ROOT
 - added LDFLAGS="-s" to ./configure enviroment,
 - added --with-included-gettext to configure parameters,
 - added full %attr description in %files,
-- more locales (ja).
+- more locales (ja),
+- build against GNU libc-2.1.
 
 * Sun Sep 27 1998 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
   [0.3-7]
