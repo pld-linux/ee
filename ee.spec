@@ -54,7 +54,7 @@ manipulação de uma variedade de formatos de imagens.
 %build
 rm -rf missing
 %{__libtoolize}
-gettextize --copy --force
+%{__gettextize}
 aclocal -I macros
 %{__autoconf}
 %{__automake}
