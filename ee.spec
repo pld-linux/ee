@@ -7,9 +7,9 @@ Name:		ee
 Version:	0.3.11
 Release:	1
 Copyright:	GPL
-Group:		X11/Applications/Graphics
-Group(pl):	X11/Aplikacje/Grafika
-Source:		ftp://ftp.gnome.org/pub/%{name}-%{version}.tar.gz
+Group:		X11/Utilities
+Group(pl):	X11/Narzêdzia
+Source:		ftp://ftp.gnome.org/pub/GNOME/stable/sources/ee/%{name}-%{version}.tar.gz
 Patch:		ee-applnk.patch
 Icon:		ee.xpm
 URL:		http://www.gnome.org/
@@ -38,9 +38,10 @@ peut aussi les modifier. Electric Eyes peut gérer quasiment tous les types
 d'images.
 
 %description -l pl
-"Elektryczne Oczy" to przegl±darka plików graficznych w ró¿nych formatach.
-Electric Eyes jest przedewszystkim przegl±dark± ale moze te¿ s³u¿yæ do
-wykonywania niektórych operacji spotykanych w programach do obróbki grafiki.
+"Elektryczne Oczy" s± przegl±dark± plików graficznych w ró¿nych formatach
+dla GNOME. Electric Eyes jest przedewszystkim przegl±dark± ale moze te¿
+s³u¿yæ do wykonywania niektórych operacji spotykanych w programach do
+obróbki grafiki.
 
 %description -l pt_BR
 O visualizador de imagens Electric Eyes permite a visualização e manipulação
