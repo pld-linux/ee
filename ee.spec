@@ -11,6 +11,7 @@ Release:	8
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/ee/0.3/%{name}-%{version}.tar.gz
+# Source0-md5:	d7e92c1cc560ce76e439353462b8aa7e
 Patch0:		%{name}-uk.po.patch
 Patch1:		%{name}-pt_BR.po.patch
 Icon:		ee.xpm
