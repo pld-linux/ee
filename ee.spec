@@ -7,13 +7,14 @@ Summary(ru):	Программа просмотра изображений Electric Eyes
 Summary(uk):	Програма перегляду зображень Electric Eyes
 Name:		ee
 Version:	0.3.12
-Release:	9
+Release:	10
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/ee/0.3/%{name}-%{version}.tar.gz
 # Source0-md5:	d7e92c1cc560ce76e439353462b8aa7e
 Patch0:		%{name}-uk.po.patch
 Patch1:		%{name}-pt_BR.po.patch
+Patch2:		%{name}-desktop.patch
 Icon:		ee.xpm
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
@@ -24,7 +25,6 @@ BuildRequires:	gtk+-devel >= 1.2.0
 BuildRequires:	imlib-devel
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 The ee package contains the Electric Eyes image viewer for the GNOME
@@ -70,6 +70,7 @@ manipulaГЦo de uma variedade de formatos de imagens.
 %setup -q
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
 
 perl -p -i -e "s|euc-japan|EUC-JP|g" po/ja.po
 perl -p -i -e "s|charset=8bit|charset=big5|g" po/zh_TW.Big5.po
