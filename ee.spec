@@ -51,9 +51,3 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/gnome/help/ee
 %{_datadir}/gnome/apps/Graphics/*
-
-%changelog
-* Sun May 30 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
-  [0.3.8-7]
-- based on RH spec,
-- spec rewrited by PLD team.
