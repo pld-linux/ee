@@ -68,8 +68,6 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	Graphicsdir=%{_applnkdir}/Graphics/Viewers
 
-gzip -9nf AUTHORS ChangeLog NEWS README
-
 %find_lang %{name} --with-gnome
 
 %clean
@@ -77,7 +75,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc *.gz
+%doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/mime-info/*
 %{_applnkdir}/Graphics/Viewers/ee.desktop
