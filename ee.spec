@@ -53,7 +53,7 @@ manipulação de uma variedade de formatos de imagens.
 
 %build
 rm -rf missing
-libtoolize --copy --force
+%{__libtoolize}
 gettextize --copy --force
 aclocal -I macros
 %{__autoconf}
