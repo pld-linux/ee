@@ -8,7 +8,9 @@ Group:		X11/Utilities
 Group(pl):	X11/Narzêdzia
 Source:		ftp://ftp.gnome.org/pub/%{name}-%{version}.tar.gz
 URL:		http://www.gnome.org/
-Requires:	gtk+ = 1.2.1
+BuildPrereq:	gtk+-devel >= 1.1.12
+BuildPrereq:	xpm-devel
+%requires_pkg	gtk+
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
@@ -35,14 +37,14 @@ make prefix=$RPM_BUILD_ROOT/usr/X11R6 install
 
 strip $RPM_BUILD_ROOT/usr/X11R6/bin/*
 
-bzip2 -9 AUTHORS ChangeLog NEWS README
+gzip -9nf AUTHORS ChangeLog NEWS README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {AUTHORS,ChangeLog,NEWS,README}.bz2
+%doc {AUTHORS,ChangeLog,NEWS,README}.gz
 
 %attr(755,root,root) /usr/X11R6/bin/*
 
