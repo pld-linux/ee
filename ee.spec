@@ -1,14 +1,15 @@
 Summary:	Electric Eyes
 Summary(pl):	Elektryczne Oczy
 Name:		ee
-Version:	0.3.5
-Release:	1d
+Version:	0.3.8
+Release:	1
 Copyright:	GPL
 Group:		X11/Utilities
-Group(pl):	X11/U¿ytki
+Group(pl):	X11/Narzêdzia
 Source:		ftp://ftp.gnome.org/pub/%{name}-%{version}.tar.gz
-URL:		http://www.gnome.org
-Requires:	imlib >= 1.8.2
+URL:		http://www.gnome.org/
+Requires:	imlib = 1.9.3
+Requires:	gtk+ = 1.2.0
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
@@ -59,8 +60,16 @@ rm -rf $RPM_BUILD_ROOT
 %lang(ko) /usr/X11R6/share/locale/ko/LC_MESSAGES/ee.mo
 %lang(no) /usr/X11R6/share/locale/no/LC_MESSAGES/ee.mo
 %lang(pt) /usr/X11R6/share/locale/pt/LC_MESSAGES/ee.mo
+%lang(ru) /usr/X11R6/share/locale/ru/LC_MESSAGES/ee.mo
+%lang(sv) /usr/X11R6/share/locale/sv/LC_MESSAGES/ee.mo
 
 %changelog
+* Sat Feb 27 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
+  [0.3.8-1]
+- Requires changed to imlib = 1.9.3, gtk+ = 1.2.0,
+- more locales (ru, sv),
+- changed Group(pl).
+
 * Tue Jan 05 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
   [0.3.5-1]
 - added LDFLAGS="-s" to ./configure enviroment,
