@@ -3,12 +3,16 @@ Summary(es):	Electric Eyes - Visualizador de ImАgenes
 Summary(fr):	Le visualiseur d'images Electric Eyes
 Summary(pl):	Elektryczne Oczy - przegl╠darka plikСw graficznych
 Summary(pt_BR):	Electric Eyes - Visualizador de Imagens
+Summary(ru):	Программа просмотра изображений Electric Eyes
+Summary(uk):	Програма перегляду зображень Electric Eyes
 Name:		ee
 Version:	0.3.12
-Release:	5
+Release:	8
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/ee/0.3/%{name}-%{version}.tar.gz
+Patch0:		%{name}-uk.po.patch
+Patch1:		%{name}-pt_BR.po.patch
 Icon:		ee.xpm
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
@@ -47,8 +51,28 @@ programach do obrСbki grafiki.
 O visualizador de imagens Electric Eyes permite a visualizaГЦo e
 manipulaГЦo de uma variedade de formatos de imagens.
 
+%description -l ru
+Пакет ee содержит программу просмотра изображений Electric Eyes для
+среды рабочего стола GNOME. Electric Eyes в первую очередь программа
+просмотра, хотя и поддерживает много типов манипуляций над
+изображениями. Electric Eyes может работать практически с любым типом
+изображений.
+
+%description -l uk
+Пакет ee м╕стить програму перегляду зображень Electric Eyes для
+середовища робочого столу GNOME. Electric Eyes в першу чергу ╓
+програмою перегляду, хоча й п╕дтриму╓ багато тип╕в ман╕пуляц╕й над
+зображеннями. Electric Eyes може працювати практично з будь-яким типом
+зображень.
+
 %prep
 %setup -q
+%patch0 -p1
+%patch1 -p1
+
+perl -p -i -e "s|euc-japan|EUC-JP|g" po/ja.po
+perl -p -i -e "s|charset=8bit|charset=big5|g" po/zh_TW.Big5.po
+perl -p -i -e "s|Encoding: big5|Encoding: 8bit|g" po/zh_TW.Big5.po
 
 %build
 rm -rf missing
@@ -66,6 +90,9 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	Graphicsdir=%{_applnkdir}/Graphics/Viewers
+
+mv -f $RPM_BUILD_ROOT%{_datadir}/locale/zh_CN{.GB2312,}
+mv -f $RPM_BUILD_ROOT%{_datadir}/locale/zh_TW{.Big5,}
 
 %find_lang %{name} --with-gnome
 
