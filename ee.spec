@@ -8,19 +8,19 @@ Version:	0.3.12
 Release:	5
 License:	GPL
 Group:		X11/Applications
-Source0:	ftp://ftp.gnome.org/pub/GNOME/stable/sources/ee/%{name}-%{version}.tar.gz
+Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/ee/0.3/%{name}-%{version}.tar.gz
 Icon:		ee.xpm
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	imlib-devel
 BuildRequires:	gettext-devel
-BuildRequires:	gtk+-devel >= 1.2.0
 BuildRequires:	gnome-libs-devel
+BuildRequires:	gtk+-devel >= 1.2.0
+BuildRequires:	imlib-devel
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define _prefix /usr/X11R6
+%define		_prefix		/usr/X11R6
 
 %description
 The ee package contains the Electric Eyes image viewer for the GNOME
