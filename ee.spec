@@ -11,7 +11,7 @@ Group:		X11/Utilities
 Group(pl):	X11/Narzêdzia
 Source:		ftp://ftp.gnome.org/pub/%{name}-%{version}.tar.gz
 Patch:		ee-applnk.patch
-Icon		ee.xpm
+Icon:		ee.xpm
 URL:		http://www.gnome.org/
 BuildRequires:	gtk+-devel >= 1.2.0
 BuildRequires:	imlib-devel
