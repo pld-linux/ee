@@ -2,7 +2,7 @@ Summary:	The Electric Eyes image viewer application
 Summary(es):	Electric Eyes - Visualizador de Imágenes
 Summary(fr):	Le visualiseur d'images Electric Eyes
 Summary(pl):	Elektryczne Oczy - przegl±darka plików graficznych
-Summary(pt_BR): Electric Eyes - Visualizador de Imagens
+Summary(pt_BR):	Electric Eyes - Visualizador de Imagens
 Name:		ee
 Version:	0.3.12
 Release:	5
