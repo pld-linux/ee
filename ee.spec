@@ -40,12 +40,12 @@ make prefix=$RPM_BUILD_ROOT%{_prefix} install
 
 gzip -9nf AUTHORS ChangeLog NEWS README
 
-%find_lang ee
+%find_lang %{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files -f ee.lang
+%files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc {AUTHORS,ChangeLog,NEWS,README}.gz
 %attr(755,root,root) %{_bindir}/*
