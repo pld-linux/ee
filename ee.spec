@@ -5,7 +5,7 @@ Summary(pl):	Elektryczne Oczy - przegl±darka plików graficznych
 Summary(pt_BR): Electric Eyes - Visualizador de Imagens
 Name:		ee
 Version:	0.3.12
-Release:	4
+Release:	5
 License:	GPL
 Group:		X11/Applications
 Group(de):	X11/Applikationen
@@ -53,6 +53,8 @@ manipulação de uma variedade de formatos de imagens.
 %setup -q
 
 %build
+rm -rf missing
+libtoolize --copy --force
 gettextize --copy --force
 aclocal -I macros
 autoconf
