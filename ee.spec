@@ -17,7 +17,6 @@ Patch1:		%{name}-pt_BR.po.patch
 Patch2:		%{name}-desktop.patch
 Patch3:		%{name}-locale_names.patch
 Patch4:		%{name}-zh_and_ja.po.patch
-Icon:		ee.xpm
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
