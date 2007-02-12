@@ -1,10 +1,10 @@
 Summary:	The Electric Eyes image viewer application
-Summary(es):	Electric Eyes - Visualizador de ImАgenes
-Summary(fr):	Le visualiseur d'images Electric Eyes
-Summary(pl):	Elektryczne Oczy - przegl╠darka plikСw graficznych
-Summary(pt_BR):	Electric Eyes - Visualizador de Imagens
-Summary(ru):	Программа просмотра изображений Electric Eyes
-Summary(uk):	Програма перегляду зображень Electric Eyes
+Summary(es.UTF-8):   Electric Eyes - Visualizador de Imц║genes
+Summary(fr.UTF-8):   Le visualiseur d'images Electric Eyes
+Summary(pl.UTF-8):   Elektryczne Oczy - przeglд┘darka plikцЁw graficznych
+Summary(pt_BR.UTF-8):   Electric Eyes - Visualizador de Imagens
+Summary(ru.UTF-8):   п÷я─п╬пЁя─п╟п╪п╪п╟ п©я─п╬я│п╪п╬я┌я─п╟ п╦п╥п╬п╠я─п╟п╤п╣п╫п╦п╧ Electric Eyes
+Summary(uk.UTF-8):   п÷я─п╬пЁя─п╟п╪п╟ п©п╣я─п╣пЁп╩я▐п╢я┐ п╥п╬п╠я─п╟п╤п╣п╫я▄ Electric Eyes
 Name:		ee
 Version:	0.3.12
 Release:	16
@@ -33,39 +33,39 @@ desktop environment. Electric Eyes is primary an image viewer, but it
 also allows many types of image manipulations. Electric Eyes can
 handle almost any type of image.
 
-%description -l es
-El visor de imАgenes Electric Eyes permite visualizar y manejar una
-variedad de formatos de imАgenes.
+%description -l es.UTF-8
+El visor de imц║genes Electric Eyes permite visualizar y manejar una
+variedad de formatos de imц║genes.
 
-%description -l fr
+%description -l fr.UTF-8
 Le package ee contient le visualiseur d'images Electric Eyes pour le
 bureau graphique GNOME. Electric Eyes est d'abord un visualiseur
-d'images, mais il peut aussi les modifier. Electric Eyes peut gИrer
+d'images, mais il peut aussi les modifier. Electric Eyes peut gц╘rer
 quasiment tous les types d'images.
 
-%description -l pl
-"Elektryczne Oczy" s╠ przegl╠dark╠ plikСw graficznych w rС©nych
-formatach dla GNOME. Electric Eyes jest przede wszystkim przegl╠dark╠,
-ale mo©e te© sЁu©yФ do wykonywania niektСrych operacji spotykanych w
-programach do obrСbki grafiki.
+%description -l pl.UTF-8
+"Elektryczne Oczy" sд┘ przeglд┘darkд┘ plikцЁw graficznych w rцЁе╪nych
+formatach dla GNOME. Electric Eyes jest przede wszystkim przeglд┘darkд┘,
+ale moе╪e teе╪ sе┌uе╪yд┤ do wykonywania niektцЁrych operacji spotykanych w
+programach do obrцЁbki grafiki.
 
-%description -l pt_BR
-O visualizador de imagens Electric Eyes permite a visualizaГЦo e
-manipulaГЦo de uma variedade de formatos de imagens.
+%description -l pt_BR.UTF-8
+O visualizador de imagens Electric Eyes permite a visualizaц╖цёo e
+manipulaц╖цёo de uma variedade de formatos de imagens.
 
-%description -l ru
-Пакет ee содержит программу просмотра изображений Electric Eyes для
-среды рабочего стола GNOME. Electric Eyes в первую очередь программа
-просмотра, хотя и поддерживает много типов манипуляций над
-изображениями. Electric Eyes может работать практически с любым типом
-изображений.
+%description -l ru.UTF-8
+п÷п╟п╨п╣я┌ ee я│п╬п╢п╣я─п╤п╦я┌ п©я─п╬пЁя─п╟п╪п╪я┐ п©я─п╬я│п╪п╬я┌я─п╟ п╦п╥п╬п╠я─п╟п╤п╣п╫п╦п╧ Electric Eyes п╢п╩я▐
+я│я─п╣п╢я▀ я─п╟п╠п╬я┤п╣пЁп╬ я│я┌п╬п╩п╟ GNOME. Electric Eyes п╡ п©п╣я─п╡я┐я▌ п╬я┤п╣я─п╣п╢я▄ п©я─п╬пЁя─п╟п╪п╪п╟
+п©я─п╬я│п╪п╬я┌я─п╟, я┘п╬я┌я▐ п╦ п©п╬п╢п╢п╣я─п╤п╦п╡п╟п╣я┌ п╪п╫п╬пЁп╬ я┌п╦п©п╬п╡ п╪п╟п╫п╦п©я┐п╩я▐я├п╦п╧ п╫п╟п╢
+п╦п╥п╬п╠я─п╟п╤п╣п╫п╦я▐п╪п╦. Electric Eyes п╪п╬п╤п╣я┌ я─п╟п╠п╬я┌п╟я┌я▄ п©я─п╟п╨я┌п╦я┤п╣я│п╨п╦ я│ п╩я▌п╠я▀п╪ я┌п╦п©п╬п╪
+п╦п╥п╬п╠я─п╟п╤п╣п╫п╦п╧.
 
-%description -l uk
-Пакет ee м╕стить програму перегляду зображень Electric Eyes для
-середовища робочого столу GNOME. Electric Eyes в першу чергу ╓
-програмою перегляду, хоча й п╕дтриму╓ багато тип╕в ман╕пуляц╕й над
-зображеннями. Electric Eyes може працювати практично з будь-яким типом
-зображень.
+%description -l uk.UTF-8
+п÷п╟п╨п╣я┌ ee п╪я√я│я┌п╦я┌я▄ п©я─п╬пЁя─п╟п╪я┐ п©п╣я─п╣пЁп╩я▐п╢я┐ п╥п╬п╠я─п╟п╤п╣п╫я▄ Electric Eyes п╢п╩я▐
+я│п╣я─п╣п╢п╬п╡п╦я┴п╟ я─п╬п╠п╬я┤п╬пЁп╬ я│я┌п╬п╩я┐ GNOME. Electric Eyes п╡ п©п╣я─я┬я┐ я┤п╣я─пЁя┐ я■
+п©я─п╬пЁя─п╟п╪п╬я▌ п©п╣я─п╣пЁп╩я▐п╢я┐, я┘п╬я┤п╟ п╧ п©я√п╢я┌я─п╦п╪я┐я■ п╠п╟пЁп╟я┌п╬ я┌п╦п©я√п╡ п╪п╟п╫я√п©я┐п╩я▐я├я√п╧ п╫п╟п╢
+п╥п╬п╠я─п╟п╤п╣п╫п╫я▐п╪п╦. Electric Eyes п╪п╬п╤п╣ п©я─п╟я├я▌п╡п╟я┌п╦ п©я─п╟п╨я┌п╦я┤п╫п╬ п╥ п╠я┐п╢я▄-я▐п╨п╦п╪ я┌п╦п©п╬п╪
+п╥п╬п╠я─п╟п╤п╣п╫я▄.
 
 %prep
 %setup -q
