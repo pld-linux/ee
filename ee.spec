@@ -8,9 +8,9 @@ Summary(uk.UTF-8):	Програма перегляду зображень Electr
 Name:		ee
 Version:	0.3.12
 Release:	16
-License:	GPL
+License:	GPL v2
 Group:		X11/Applications
-Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/ee/0.3/%{name}-%{version}.tar.gz
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/ee/0.3/%{name}-%{version}.tar.gz
 # Source0-md5:	d7e92c1cc560ce76e439353462b8aa7e
 Patch0:		%{name}-uk.po.patch
 Patch1:		%{name}-pt_BR.po.patch
@@ -80,7 +80,6 @@ mv -f po/zh_CN{.GB2312,}.po
 mv -f po/{no,nb}.po
 
 %build
-rm -rf missing
 %{__libtoolize}
 %{__gettextize}
 %{__aclocal} -I macros
