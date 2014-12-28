@@ -20,7 +20,7 @@ Patch4:		%{name}-zh_and_ja.po.patch
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gnome-libs-devel
 BuildRequires:	gtk+-devel >= 1.2.0
 BuildRequires:	imlib-devel
