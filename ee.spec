@@ -69,11 +69,11 @@ manipulação de uma variedade de formatos de imagens.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
-%patch3 -p1
-%patch4 -p1
+%patch -P0 -p1
+%patch -P1 -p1
+%patch -P2 -p1
+%patch -P3 -p1
+%patch -P4 -p1
 
 mv -f po/zh_TW{.Big5,}.po
 mv -f po/zh_CN{.GB2312,}.po
